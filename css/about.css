@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'PressStart2P';
+    src: url('../assets/fonts/PressStart2P.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+
+body{
+    font-family: 'PressStart2P';
+    background-color: #161b22;
+}
+
+.about-hero {
+    text-align: center;
+    padding: 2rem;
+    background-color: #0d1117;
+    color: #58a6ff;
+}
+
+.journey, .skills, .fun-facts, .goals {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    background-color: #161b22;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #c9d1d9;
+}
+
+.skills-list {
+    list-style-type: square;
+    padding-left: 1.5rem;
+}
+
+h1, h2 {
+    color: #58a6ff;
+    margin-bottom: 1rem;
+}

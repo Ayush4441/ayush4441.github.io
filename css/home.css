@@ -1,0 +1,244 @@
+@font-face {
+  font-family: 'PressStart2P';
+  src: url('../assets/fonts/PressStart2P.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PressStart2P";
+  margin: 0;
+  padding: 0;
+  background-color: #0d1117;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  padding: 2rem;
+  background-color: #0d1117;
+  color: white;
+  overflow: hidden;
+}
+
+.banner-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  /* Add animation background later */
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+}
+
+.profile-pic {
+  width: 441px;
+  height: 441px;
+  border-radius: 100%;
+  margin-bottom: 2rem;
+  border: 4px solid #ffffff10;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.intro-text h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+.intro-text h3{
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.intro-text h2 {
+  font-size: 1.5rem;
+  color: #58a6ff;
+  margin: 0.8rem 0;
+}
+
+.intro-text p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #c9d1d9;
+}
+
+/* Latest work */
+.latest-work {
+  padding: 6rem 2rem;
+  background-color: #161b22;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.latest-work h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #f0f6fc;
+}
+
+.latest-project {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+.latest-project img {
+  display: block;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+.latest-project .description {
+  font-size: 1rem;
+  color: #c9d1d9;
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+/* Skill */
+.skills-tools {
+  background-color: #0d1117;
+  color: #c9d1d9;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.skills-tools h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.tools-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+.tag {
+  background-color: #21262d;
+  padding: 0.7rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #f0f6fc;
+  border: 1px solid #30363d;
+}
+
+.tag.placeholder {
+  opacity: 0.5;
+  font-style: italic;
+}
+
+/* Timeline */
+.timeline-section {
+  background-color: #161b22;
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.timeline-section h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.timeline {
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.timeline-item {
+  border-left: 3px solid #30363d;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -9px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  background-color: #58a6ff;
+  border-radius: 50%;
+}
+
+.timeline-item.placeholder {
+  opacity: 0.6;
+  font-style: italic;
+}
+
+/* bottom navbar */
+.bottom-hover-nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #0d1117;
+  border-top: 1px solid #30363d;
+  padding: 1.5rem 0;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.bottom-hover-nav .nav-item {
+  position: relative;
+  text-align: center;
+  flex: 1;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+}
+
+.bottom-hover-nav .nav-item a {
+  color: #58a6ff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.bottom-hover-nav .nav-item:hover a 
+{
+  text-decoration: underline;
+}
+
+.bottom-hover-nav .nav-detail {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  color: #c9d1d9;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.bottom-hover-nav .nav-item:hover .nav-detail {
+  max-height: 3rem;
+  opacity: 1;
+}
